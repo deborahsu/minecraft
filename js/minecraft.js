@@ -1,5 +1,6 @@
 var game={
     start: function(){
+<<<<<<< HEAD
         for(var i=0; i<400; i++){
             var game=document.getElementById("game");
 
@@ -17,7 +18,7 @@ var game={
             }else{
                 block.className="tile sky";
             }
-            
+
 
             game.appendChild(block);
             block.addEventListener("click",this.toggle)

@@ -25,16 +25,15 @@ body{
 	flex-wrap: wrap;
 }
 .tile{
-	height: 50px;
-    width: 50px;
-
+	height: 25px;
+    width: 25px;
     margin: 0px;
 }
 .sky{
 	background-image: url('../images/sky.jpeg');
 }
 .soil{
-	background-color: peru
+	background-image:url('../images/soil.jpeg')
 }
 .cloud{
 	background-color: white;
@@ -43,10 +42,10 @@ body{
 	background-color: peru;
 }
 .greenery{
-	background-color: chartreuse;
+	background-image: url('../images/grass.png');
 }
 .rock{
-	background-color: dimgrey;
+	background-image:url('../images/stones.jpeg');;
 }
 .tools{
 	color:white;

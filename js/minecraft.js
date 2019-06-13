@@ -1,23 +1,24 @@
 var game={
     start: function(){
-        for(var i=0; i<100; i++){
+
+        for(var i=0; i<400; i++){
             var game=document.getElementById("game");
 
             var block=document.createElement("div");
-            if(i>=60){
+            if(i>=260){
                 block.className="tile soil";
-            }else if(i==57||i==47){
+            }else if(i==213||i==193||i==194||i==233||i==234||i==214 ||i==253||i==254){
                 block.className="tile tree";
-            }else if(21<=i&& i<=25){
+            }else if((85<=i&& i<=90)||(103<=i&&110>=i) ||(123<=i&&131>=i)||(144<=i&&150>=i)){
                 block.className="tile cloud";
-            }else if((36<=i&& i<=38) || (i==46||i==48)){
+            }else if((171<=i&& i<=176) || (i==256||i==257) || (i==236||i==237)|| (i==192||i==195) ||(151<=i&& i<=156)|| (132<=i&& i<=135)){
                 block.className="tile greenery";
-            }else if(i==41||i==51){
-                block.className="tile rockk ";
+            }else if((222<=i&& i<=226)||(242<=i&& i<=246)){
+                block.className="tile rock";
             }else{
                 block.className="tile sky";
             }
-            block.innerText=i;
+
 
             game.appendChild(block);
             block.addEventListener("click",this.toggle)

@@ -1,27 +1,31 @@
+
 var game={
     start: function(){
 
         for(var i=0; i<400; i++){
-            var game=document.getElementById("game");
+      ;
+            var block=$("<div/>");
+           
 
-            var block=document.createElement("div");
-            if(i>=260){
-                block.className="tile soil";
+            if(i>=260 && i<=279){
+                block.addClass("tile soilgrass");
+            }else if(i>=280){
+                block.addClass("tile soil");
             }else if(i==213||i==193||i==194||i==233||i==234||i==214 ||i==253||i==254){
-                block.className="tile tree";
-            }else if((85<=i&& i<=90)||(103<=i&&110>=i) ||(123<=i&&131>=i)||(144<=i&&150>=i)){
-                block.className="tile cloud";
+                block.addClass("tile tree");
+            }else if((82<=i&& i<=88)||(101<=i&&109>=i) ||(121<=i&&129>=i)||(142<=i&&148>=i)){
+                block.addClass("tile cloud");
             }else if((171<=i&& i<=176) || (i==256||i==257) || (i==236||i==237)|| (i==192||i==195) ||(151<=i&& i<=156)|| (132<=i&& i<=135)){
-                block.className="tile greenery";
+                block.addClass("tile greenery");
             }else if((222<=i&& i<=226)||(242<=i&& i<=246)){
-                block.className="tile rock";
+                block.addClass("tile rock");
             }else{
-                block.className="tile sky";
+                block.addClass("tile sky");
             }
-
-
-            game.appendChild(block);
-            block.addEventListener("click",this.toggle)
+            
+            $("#game").append(block);
+          
+            block.on ("click",this.toggle)
         }
 
         this.selectTools();
@@ -31,9 +35,9 @@ var game={
     selectedTool:"shovel",
 
     selectTools: function(){
-        var Tools = document.getElementsByClassName("tools");
+        var Tools = $(".tools");
         for (var i = 0; i < Tools.length; i++) {
-            Tools[i].addEventListener("click", function (e) {
+            Tools[i].on("click", function (e) {
                 var tool = e.target.id || e.target.parentElement.id;
                 game.selectedTool=tool;
             })
@@ -50,13 +54,14 @@ var game={
     addMaterial: function(material){
         document.getElementById("Material").className=material;
     
+    },
+    stickMaterial: function(material){
+       document.getElementsByClassName(".tile") = document.getElementById("Material");
+    
     }
         
 
     }
 
-
-    
-
-
 game.start();
+

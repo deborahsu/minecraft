@@ -33,13 +33,13 @@ body{
 	background-image: url('../images/sky.jpeg');
 }
 .soil{
-	background-image:url('../images/soil.jpeg')
+	background-image:url('../images/soil.jpg')
 }
 .cloud{
 	background-color: white;
 }
 .tree{
-	background-color: peru;
+	background-color:peru;
 }
 .greenery{
 	background-image: url('../images/grass.png');
@@ -47,11 +47,15 @@ body{
 .rock{
 	background-image:url('../images/stones.jpeg');;
 }
+.soilgrass{
+	background-image:url('../images/soilgrass.jpeg');;
+}
 .tools{
 	color:white;
 	font-size: 18px;
 	border:black 1px solid;
-	width:72%;
+	width:30px;
+	height:30px;
 	margin-top:20px;
 	display:flex;
 	padding:18px;
@@ -120,14 +124,30 @@ body{
 	border: 1px solid white;
 	color:white;
 	font-size: 18px;
-	border:black 1px solid;
-	width:72%;
+	width:50%;
 	margin-top:20px;
 	display:flex;
 	padding:18px;
 	justify-content: center;
 	align-items: space-between;
+	width:30px;
 }
 
+#shovel{
+	background-image:url('../images/shovel.jpeg');
+	background-size:cover;
+	background-repeat: no-repeat;
+}
 
+#pickaxe{
+	background-image:url('../images/pickaxe.jpeg');
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+#axe{
+	background-image:url('../images/axe.jpeg');
+	background-size:cover;
+	background-repeat: no-repeat;
+}
 

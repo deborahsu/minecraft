@@ -13,7 +13,7 @@ var game={
             }else if((36<=i&& i<=38) || (i==46||i==48)){
                 block.className="tile greenery";
             }else if(i==41||i==51){
-                block.className="tile rock";
+                block.className="tile rockk ";
             }else{
                 block.className="tile sky";
             }
@@ -40,12 +40,22 @@ var game={
     },
     
     toggle: function(){
-
-        this.classList.remove(this.classList[1]);
+        var materialType=this.classList[1];
+        this.classList.remove(materialType);
         this.classList.add("sky");
         console.log(this.classList[1]);
+        game.addMaterial(materialType);
+    },
+    addMaterial: function(material){
+        document.getElementById("Material").className=material;
+    
+    }
+        
+
     }
 
-}
+
+    
+
 
 game.start();

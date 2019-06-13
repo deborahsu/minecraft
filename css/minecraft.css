@@ -29,10 +29,9 @@ body{
     width: 50px;
 
     margin: 0px;
-    background-color: pink;
 }
 .sky{
-	background-color: aqua;
+	background-image: url('../images/sky.jpeg');
 }
 .soil{
 	background-color: peru
@@ -116,6 +115,19 @@ body{
 #six{
 	color:black;
 
+}
+
+#Material{
+	border: 1px solid white;
+	color:white;
+	font-size: 18px;
+	border:black 1px solid;
+	width:72%;
+	margin-top:20px;
+	display:flex;
+	padding:18px;
+	justify-content: center;
+	align-items: space-between;
 }
 
 

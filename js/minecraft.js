@@ -1,9 +1,18 @@
 
 var game = {
+    landing: function () {
+        $("#buttonTutorial").on("click", this.instruct);
+        $("#buttonstartGame").on("click", this.start);
+    },
+    instruct: function () {
+        $("iframe").css("visibility", "visible");
+    },
     start: function () {
+        $(".landing").css("display", "none");
+        $(".contain").css("display", "flex");
 
         for (var i = 0; i < 400; i++) {
-            ;
+
             var block = $("<div/>");
 
 
@@ -25,10 +34,10 @@ var game = {
 
             $("#game").append(block);
 
-            block.on("click", this.toggle)
+            block.on("click", game.toggle)
         }
 
-        this.selectTools();
+        game.selectTools();
     },
 
 
@@ -48,6 +57,7 @@ var game = {
     },
 
     toggle: function () {
+        console.log("testing")
         if (game.buildMode == "off") {
             var materialType = this.classList[1];
             if ((materialType == "soil" || materialType == "soilgrass") && game.selectedTool == "shovel") {
@@ -99,7 +109,7 @@ var game = {
     setBuildMode: function () {
         $("#Material").removeClass();
         game.buildMode = "on";
-        console.log(game.buildMode);
+
 
     },
     build: function (target) {
@@ -114,7 +124,7 @@ var game = {
 
 }
 
-game.start();
+game.landing();
 $("#Material").click(function () {
     game.setBuildMode();
 });

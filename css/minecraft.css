@@ -1,74 +1,83 @@
-body{
-	margin:0px;
+body {
+	margin: 0px;
 }
-.contain{
-	width:100vw;
-	height:100vh;
-	display: flex;
-}
-.whole{
 
+.contain {
+	width: 100vw;
+	height: 100vh;
+	display: none;
+}
+
+.whole {
 	height: 100vh;
 	width: 80vw;
-	margin-right:0px;
+	margin-right: 0px;
 	background-size: cover;
 	background-position: center center;
-	display:flex;
+	display: flex;
 	justify-content: center;
-	align-items:center;
-	background-image:url('../images/backgroundimage.jpeg');
-
+	align-items: center;
+	background-image: url('../images/backgroundimage.jpeg');
 }
 
-
-.game{
-	width:500px;
-	height:500px;
-	border:1px solid gray;
-	display:flex;
+.game {
+	width: 500px;
+	height: 500px;
+	border: 1px solid gray;
+	display: flex;
 	flex-wrap: wrap;
 }
-.tile{
+
+.tile {
 	height: 25px;
-    width: 25px;
-    margin: 0px;
+	width: 25px;
+	margin: 0px;
 }
-.sky{
+
+.sky {
 	background-image: url('../images/sky.jpeg');
 }
-.soil{
-	background-image:url('../images/soil.jpg')
+
+.soil {
+	background-image: url('../images/soil.jpg')
 }
-.cloud{
+
+.cloud {
 	background-color: white;
 }
-.tree{
-	background-color:peru;
+
+.tree {
+	background-color: peru;
 }
-.greenery{
+
+.greenery {
 	background-image: url('../images/grass.png');
 }
-.rock{
-	background-image:url('../images/stones.jpeg');;
+
+.rock {
+	background-image: url('../images/stones.jpeg');
+	;
 }
-.soilgrass{
-	background-image:url('../images/soilgrass.jpeg');;
+
+.soilgrass {
+	background-image: url('../images/soilgrass.jpeg');
+	;
 }
-.tools{
-	color:white;
+
+.tools {
+	color: white;
 	font-size: 18px;
-
-	border:white 5px solid;
-
-	width:30px;
-	height:30px;
-	margin-top:20px;
-	display:flex;
-	padding:18px;
+	border: white 5px solid;
+	width: 30px;
+	height: 30px;
+	margin-top: 20px;
+	display: flex;
+	padding: 18px;
 	justify-content: center;
 	align-items: space-between;
 }
-.options{
+
+.options {
 	height: 100vh;
 	width: 18vw;
 	background: #333333;
@@ -78,82 +87,61 @@ body{
 	justify-content: center;
 }
 
-.option{
-	width:76%;
-
-}
-
-
-
-.background{
-	height:54%;
-
-}
-
-.clear{
-	height:9%;
-
-}
-.clearbar{
-	background: white;
-	display: flex;
-	justify-content: center;
-	align-items:center;
-	height: 36px;
-	border-radius: 18px;
-	margin-top: 36px;
-	
-}
-
-.background .back{
-	color: white;
-	font-family: cursive;
-	font-size: 18px;
-	display: flex;
-	justify-content: center;
-	margin: 12px;
-	padding: 12px;
-	background-position: center center;
-	background-size: cover;
-}
-#one{
-	color:black;
-
-}
-
-#six{
-	color:black;
-
-}
-
-#Material{
+#Material {
 	border: 1px solid white;
-	color:white;
+	color: white;
 	font-size: 18px;
-	width:50%;
-	margin-top:20px;
-	display:flex;
-	padding:18px;
+	width: 50%;
+	margin-top: 20px;
+	display: flex;
+	padding: 18px;
 	justify-content: center;
 	align-items: space-between;
-	width:30px;
+	width: 30px;
 }
 
-#shovel{
-	background-image:url('../images/shovel.jpeg');
-	background-size:cover;
+#shovel {
+	background-image: url('../images/shovel.jpeg');
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
-#pickaxe{
-	background-image:url('../images/pickaxe.jpeg');
-	background-size:cover;
+#pickaxe {
+	background-image: url('../images/pickaxe.jpeg');
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
-#axe{
-	background-image:url('../images/axe.jpeg');
-	background-size:cover;
+#axe {
+	background-image: url('../images/axe.jpeg');
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
+.landing {
+	height: 100vh;
+	width: 100vw;
+	background-image: url("../images/bodyBackground.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 3%;
+	text-align: center;
+}
+
+.gamecontainer {
+	display: inline-block;
+	width: 80%;
+	height: 500px;
+	background-image: url("../images/minecraft.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+iframe {
+	visibility: hidden;
+}
+
+button {
+	width: 100px;
+}

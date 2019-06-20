@@ -57,7 +57,6 @@ var game = {
     },
 
     toggle: function () {
-        console.log("testing")
         if (game.buildMode == "off") {
             var materialType = this.classList[1];
             if ((materialType == "soil" || materialType == "soilgrass") && game.selectedTool == "shovel") {
